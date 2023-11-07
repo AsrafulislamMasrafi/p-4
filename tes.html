@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 500px;
+        position: relative;
+      }
+      div {
+        width: 33%;
+        height: 300px;
+        transition: all 0.3s;
+        z-index: 1;
+      }
+      /* 2xl */
+      @media (max-width: 1536px) {
+      }
+
+      /* xl */
+      @media (min-width: 1280px) {
+        div{
+          background: #a78181 !important;
+        }
+      }
+
+      /* lg */
+      @media (max-width: 1024px) {
+      }
+
+      /* md */
+      @media (max-width: 768px) {
+      }
+
+      /* sm */
+      @media (max-width: 640px) {
+        div {
+          width: 100%;
+        }
+      }
+
+      /* xs */
+      @media (max-width: 475px) {
+      }
+
+      div:nth-child(1) {
+        background: rgb(63, 94, 251);
+      }
+      div:nth-child(2) {
+        background: hsl(78, 96%, 62%);
+      }
+      div:nth-child(3) {
+        background: hsl(143, 96%, 62%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>
